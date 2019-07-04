@@ -9,10 +9,10 @@ userOneCurrentLocation=0
 userTwoCurrentLocation=0
 
 def findUserCurrentLocation(userInput,userCurrentLocation):
-    if userInput==LT:
-        print("Ohh thats great")
+    if (userInput+userCurrentLocation)==LT:
+        print("Ohh thats great you took ladder Congrats !!!")
         return LH
-    elif userInput==SH:
+    elif (userInput+userCurrentLocation)==SH:
         print("you have been bit by snake")
         return ST
     else:
