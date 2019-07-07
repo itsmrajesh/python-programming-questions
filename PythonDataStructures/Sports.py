@@ -16,9 +16,10 @@ print("All Players List")
 displayNames(all_Players_list)
 
 unique_Players_Set=set()
+unique_Players_Set={name for name in all_Players_list}
 
-for name in all_Players_list:
-    unique_Players_Set.add(name)
+#for name in all_Players_list:
+#    unique_Players_Set.add(name)
 
 print("Unique Players")
 displayNames(unique_Players_Set)
