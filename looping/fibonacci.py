@@ -11,7 +11,7 @@ def fibonacci(n):
 
 
 t0 = time.time()
-for i in range(1, 28):
+for i in range(1, 21):
     t1 = time.time()
     print(fibonacci(i))
 
