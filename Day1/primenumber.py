@@ -8,7 +8,7 @@ def isPrime(n):
     else:
         max=math.floor(math.sqrt(n))
         for i in range(2,max+1):
-            if n%2==0:
+            if n%i==0:
                 return False
         return True
 
