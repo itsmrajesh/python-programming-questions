@@ -7,9 +7,10 @@ def group_anagrams(lst):
         else:
             dct[s] = [ele]
 
-    for k,v in dct.items():
-        print(k)
-        print(v)
+    #for k,v in dct.items():
+        #print(k)
+        #print(v)
+    return dct.values()
 
 lst=["eat","tea","tan","ate","nat","bat"]
 print(group_anagrams(lst))
