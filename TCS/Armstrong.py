@@ -8,4 +8,13 @@ def is_armstrong(n):
     return sum == n
 
 
-print(is_armstrong(int(input())))
+num1 = int(input())
+num2 = int(input())
+if num1 > 0 and num2 >= num1:
+    while num1 < num2:
+        if is_armstrong(num1):
+            print(num1)
+        num1 += 1
+
+else:
+    print("Invalid Boundraies")

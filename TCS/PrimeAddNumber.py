@@ -31,4 +31,3 @@ else:
 print(is_prime(get_sum(num[::2])))
 
 
-
