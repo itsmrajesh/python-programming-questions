@@ -1,6 +1,6 @@
 import math as m
 
-
+"""print these series 1 2 1 3 5 3 7 5 11 8"""
 def is_prime(n):
     if n <= 1:
         return False
