@@ -4,9 +4,10 @@ def convert_to_octal(n):
         lst.append(n % 8)
         n //= 8
     lst.reverse()
-    res=''
+    res = ''
     for i in lst:
-        res +=str(i)
+        res += str(i)
     return int(res)
+
 
 print(convert_to_octal(int(input())))
