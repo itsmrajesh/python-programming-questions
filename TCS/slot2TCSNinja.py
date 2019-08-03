@@ -1,11 +1,11 @@
-arr = list(map(int, input().split()))
-
+arr = input()
+arr=list(arr)
 arr_len = len(arr)
 even_sum, odd_sum = 0, 0
 for i in range(arr_len):
     if i % 2 == 0:
-        odd_sum += arr[i]
+        odd_sum += int(arr[i])
     else:
-        even_sum += arr[i]
+        even_sum += int(arr[i])
 
-print(odd_sum, even_sum)
+print(abs(even_sum-odd_sum))
