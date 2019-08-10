@@ -5,4 +5,4 @@ def get_gcd(a, b):
         return get_gcd(b, a % b)
 
 
-print(get_gcd(10, 20))
+print(get_gcd(int(input()), int(input())))
