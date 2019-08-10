@@ -1,6 +1,3 @@
-longest = 0
-
-
 def is_sub(s):
     if len(s) >= 3:
         for word in s:
@@ -18,8 +15,8 @@ def get_substring(s):
     res = "-1"
     for i in range(0, l):
         for j in range(i + 3, l):
-            sub = s[i:j]
-            #print(sub)
+            sub = s[i:j + 1]
+            # print(sub)
             if is_sub(sub):
                 if len(sub) > max:
                     max = len(sub)
