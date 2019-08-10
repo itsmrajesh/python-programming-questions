@@ -11,13 +11,14 @@ def get(arr):
                 l.append(k)
                 l.append(arr[j])
                 return l
+    return l
 
 def get_seq(arr):
     arr.sort()
     lst=list()
     a=get(arr)
     status=True
-    if a[0] !=0 and a[1] !=0:
+    if a !=[] and a[0] !=0 and a[1] !=0:
         for i in range(4):
             lst.append(a[0])
             s = a[0]+a[1]
