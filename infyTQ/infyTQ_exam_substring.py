@@ -1,3 +1,5 @@
+"""Problem Statement https://www.geeksforgeeks.org/infosys-certification-exam-infytq/"""
+
 def is_sub(s):
     if len(s) >= 3:
         for word in s:
