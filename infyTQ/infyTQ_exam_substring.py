@@ -12,7 +12,7 @@ def get_substring(s):
     l = len(s)
     min = 3
     max = 0
-    res = "-1"
+    lst=list()
     for i in range(0, l):
         for j in range(i + 3, l):
             sub = s[i:j + 1]
@@ -20,8 +20,11 @@ def get_substring(s):
             if is_sub(sub):
                 if len(sub) > max:
                     max = len(sub)
-                    res = sub
-    return res
+                    lst.append(sub)
+    if lst==[]:
+        return -1
+    else:
+        return lst[-1]
 
 
 s = input()
