@@ -15,7 +15,7 @@ def get_substring(s):
     l=len(s)
     min=3
     max=0
-    res=""
+    res="-1"
     for i in range(0,l):
         for j in range(i+3,l-3):
             sub=s[i:j]
